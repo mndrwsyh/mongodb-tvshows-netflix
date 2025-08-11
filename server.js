@@ -78,7 +78,7 @@ app.get("/movies", async (req, res) => {
 });
 
 // GET movies/:id - get a specific id
-app.get("movies/:id", async (req, res) => {
+app.get("/movies/:id", async (req, res) => {
   // retrieve id from params
   const id = req.params.id;
   // load the movie data based on id
@@ -130,7 +130,7 @@ app.get("/shows", async (req, res) => {
 });
 
 // GET shows/:id - get a specific id
-app.get("shows/:id", async (req, res) => {
+app.get("/shows/:id", async (req, res) => {
   // retrieve id from params
   const id = req.params.id;
   // load the show data based on id
